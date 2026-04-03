@@ -15,7 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 @Setter
-public class User {
+public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,7 +23,9 @@ public class User {
 
     private String name;
 
-    private Role role;
+    private String email;
+
+    private String role;
 
     @OneToMany(cascade = CascadeType.ALL)
     private List<Order> orders = new ArrayList<>();

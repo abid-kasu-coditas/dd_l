@@ -1,8 +1,7 @@
 package com.example.spring_aop_assignment.repository;
 
-import com.example.spring_aop_assignment.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository extends JpaRepository<User,Long> {
+public interface CustomerRepository extends JpaRepository<com.example.spring_aop_assignment.entities.Customer,Long> {
 
 }

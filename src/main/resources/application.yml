@@ -1,1 +1,16 @@
-spring.application.name=spring_aop_assignment
+spring:
+  application:
+    name: spring_aop_assignment
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/aopDb?createDatabaseIfNotExist=true
+    username: root
+    password: coditas
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update

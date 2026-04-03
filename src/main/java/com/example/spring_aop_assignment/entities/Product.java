@@ -1,15 +1,14 @@
 package com.example.spring_aop_assignment.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
@@ -29,6 +28,9 @@ public class Product {
     private BigDecimal price;
 
     private Integer Stock;
+
+//    @OneToMany(mappedBy = "product")
+//    private List<OrderItem> orderItems = new ArrayList<>();
 
 
 

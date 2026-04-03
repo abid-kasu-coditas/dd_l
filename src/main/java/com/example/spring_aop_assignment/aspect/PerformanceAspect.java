@@ -14,7 +14,7 @@ public class PerformanceAspect {
         long start = System.currentTimeMillis();
         Object result = pjp.proceed();
         long end = System.currentTimeMillis()-start;
-        System.out.println("Method"+pjp.getSignature()+"executed in "+end);
+        System.out.println("Method"+pjp.getSignature()+"executed in "+end+"ms");
         return result;
     }
 
