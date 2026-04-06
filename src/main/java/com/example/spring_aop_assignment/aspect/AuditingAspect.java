@@ -30,5 +30,6 @@ public class AuditingAspect {
         String methodName = joinPoint.getSignature().getName();
         String args = Arrays.toString(joinPoint.getArgs());
         System.out.println("API Completed"+methodName+args);
+
     }
 }
